@@ -8,11 +8,11 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
    <h2>Mission Destination</h2>
 
    <ol>
-        <li style="text-align: left">Name: ${name}</li>
-        <li style="text-align: left">Diameter: ${diameter} </li>
-        <li style="text-align: left">Star: ${star}</li>
-        <li style="text-align: left">Distance from Earth: ${distance}</li>
-        <li style="text-align: left">Number of Moons: ${moons}</li>
+        <li>Name: ${name}</li>
+        <li>>Diameter: ${diameter} </li>
+        <li>Star: ${star}</li>
+        <li>Distance from Earth: ${distance}</li>
+        <li>>Number of Moons: ${moons}</li>
    </ol>
 
    <img src=${imageUrl}>`
