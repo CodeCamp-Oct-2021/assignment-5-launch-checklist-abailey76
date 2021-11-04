@@ -1,5 +1,5 @@
 // Write your helper functions here!
-require('isomorphic-fetch');
+import 'isomorphic-fetch';
 
 function addDestinationInfo(document, name, diameter, star, distance, moons, imageUrl) {
    // Here is the HTML formatting for our mission target div.
@@ -93,8 +93,13 @@ function pickPlanet(planets) {
     return currentPlanet;
 }
 
-module.exports.addDestinationInfo = addDestinationInfo;
-module.exports.validateInput = validateInput;
-module.exports.formSubmission = formSubmission;
-module.exports.pickPlanet = pickPlanet; 
-module.exports.myFetch = myFetch;
+const _addDestinationInfo = addDestinationInfo;
+export { _addDestinationInfo as addDestinationInfo };
+const _validateInput = validateInput;
+export { _validateInput as validateInput };
+const _formSubmission = formSubmission;
+export { _formSubmission as formSubmission };
+const _pickPlanet = pickPlanet;
+export { _pickPlanet as pickPlanet }; 
+const _myFetch = myFetch;
+export { _myFetch as myFetch };
