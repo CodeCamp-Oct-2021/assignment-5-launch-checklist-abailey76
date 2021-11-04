@@ -39,8 +39,8 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     // Cargo is too heavy AND fuel is too low to launch
     if (cargoLevel > 10000 && fuelLevel < 10000) {
         list.style.visibility= "visible";
-        h2.style.color = "rgb(199, 37, 78)"; /*RED*/
-        h2.innerHTML = "Shuttle Not Ready for Launch.";       
+        h2.style.color = "rgb(199, 37, 78)"; /*red*/
+        h2.innerHTML = "Shuttle Not Ready for Launch";       
         pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch.`;
         copilotStatus.innerHTML = `Co-pilot ${copilot} is ready for launch.`;
         fuelStatus.innerHTML = "Fuel level too low for launch.";
@@ -48,8 +48,8 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
      // Fuel level is too low for launch and Cargo level is low enough
     } else if (fuelLevel < 10000 && cargoLevel <= 10000) {
         list.style.visibility = "visible";
-        h2.style.color = "rgb(199, 37, 78)"; /*RED*/
-        h2.innerHTML = "Shuttle Not Ready for Launch.";
+        h2.style.color = "rgb(199, 37, 78)"; /*red*/
+        h2.innerHTML = "Shuttle Not Ready for Launch";
         fuelStatus.innerHTML = "Fuel level too low for launch.";
         pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch.`;
         copilotStatus.innerHTML = `Co-pilot ${copilot} is ready for launch.`;
@@ -58,7 +58,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     // Cargo is too heavy for launch and fuel is high enough
     } else if (cargoLevel > 10000 && fuelLevel >= 10000) {
         list.style.visibility = "visible";
-        h2.style.color = "rgb(199, 37, 78)"; /*RED*/
+        h2.style.color = "rgb(199, 37, 78)"; /*red*/
         h2.innerHTML = "Shuttle Not Ready for Launch";
         pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`;
         copilotStatus.innerHTML = `Co-pilot ${copilot} is ready for launch`;
@@ -68,7 +68,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     // Shuttle ready for launch with enough fuel and cargo
     } else if (cargoLevel <= 10000 && fuelLevel >= 10000) {
         list.style.visibility = "visible";
-        h2.style.color = "rgb(65, 159, 106)"; /*GREEN*/
+        h2.style.color = "rgb(65, 159, 106)"; /*green*/
         h2.innerHTML = "Shuttle is Ready for Launch";
         pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`;
         copilotStatus.innerHTML = `Co-pilot ${copilot} is ready for launch`;
